@@ -1,4 +1,4 @@
-// Given a nutural number "n" determine if the number is prime or not
+// Given a natural number "n" determine if the number is prime or not
 
 function prime(n){
     if(n<2){
@@ -12,6 +12,6 @@ function prime(n){
     return "Prime"
 }
 
-console.log(prime(39));
+console.log(prime(33));
 
-// Big-O = O(n): 
+// Big-O = O(n): Linear time complexty:  As the value of n increases, the number of times line 8 executes increases

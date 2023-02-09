@@ -9,6 +9,7 @@ function factorial(n){
     return m
 }
 
-console.log(factorial(4));
+console.log(factorial(4)); //24
 
-// Big-O = O(n): 
+// Big-O = O(n) Linear time complexty:  As the value of n increases, the number of times line 6 executes increases
+// 

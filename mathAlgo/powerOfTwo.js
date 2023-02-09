@@ -1,28 +1,26 @@
-// function isPowerOfTwo(n){
-//     if(n<1){
-//         return false
-//     }
-//     while(n>1){
-//         if(n%2 !==0){
-//             return false
-//         }
-//         n=n/2
-//     }
-//     return true
-// } 
+function isPowerOfTwo(n){
+    if(n<1){
+        return false
+    }
+    while(n>1){
+        if(n%2 !==0){
+            return false
+        }
+        n=n/2
+    }
+    return true
+} 
 
-// console.log(isPowerOfTwo(1)) //true
-// console.log(isPowerOfTwo(2)) //true
-// console.log(isPowerOfTwo(5)) //false
-// console.log(isPowerOfTwo(8)) //true
+console.log(isPowerOfTwo(1)) //true
+console.log(isPowerOfTwo(2)) //true
+console.log(isPowerOfTwo(5)) //false
+console.log(isPowerOfTwo(8)) //true
 
-// Big-O = O(logn): i.e logarithmic
+// Big-O = O(logn): i.e logarithmic: with each teration, the input vale is reduced by half
 
 
 
 // a better solution to make it a constant time complexity is to use the below called bitwise operation
-
-
 function isPowerOfTwoBitwise(n){
     if(n<1){
         return false
@@ -34,3 +32,5 @@ console.log(isPowerOfTwoBitwise(1)) //true
 console.log(isPowerOfTwoBitwise(2))  //true
 console.log(isPowerOfTwoBitwise(5)) //false
 console.log(isPowerOfTwoBitwise(8)) //true
+
+// Big O = O(1) irrespective of the size of n, line 26 runs only once.
